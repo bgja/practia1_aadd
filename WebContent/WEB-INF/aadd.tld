@@ -1,0 +1,34 @@
+<taglib>
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.1</jspversion>
+	<shortname>aadd</shortname>
+	<uri>http://www.um.es/aadd/tld</uri>
+	<info> Libreria de etiquetas de AADD </info>
+	<tag>
+		<name>enlace</name>
+		<tagclass>tags.EnlaceTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+		<info>Crea un enlace con reescritura de URL</info>
+		<attribute>
+			<name>url</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>texto</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>recorrerUsuarios</name>
+		<tagclass>tags.ListarUsuariosTag</tagclass>
+		<teiclass>tags.ListarUsuariosTEI</teiclass>
+		<bodycontent>JSP</bodycontent>
+		<attribute>
+			<name>usuarios</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>

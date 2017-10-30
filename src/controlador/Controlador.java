@@ -24,7 +24,7 @@ public class Controlador {
 	
 	public static Controlador getUnicaInstancia(){
 		if(unicaInstancia == null){
-			new Controlador();
+			unicaInstancia = new Controlador();
 		}
 		return unicaInstancia;
 	}
@@ -63,6 +63,11 @@ public class Controlador {
 		} catch (DAOException e) {
 			e.printStackTrace();
 		}
+		return null;
+	}
+
+	public Usuario modificarUsuario(String usuario, String contrasena, String mail, String telefono) {
+		// TODO Auto-generated method stub
 		return null;
 	}
 }

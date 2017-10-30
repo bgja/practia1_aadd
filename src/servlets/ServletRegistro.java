@@ -53,7 +53,7 @@ public class ServletRegistro extends HttpServlet {
 		
 		Usuario usu = Controlador.getUnicaInstancia().obtenerUsuario(usuario);
 		
-		if(usu == null){
+		if(usu != null){
 			response.sendError(response.SC_UNAUTHORIZED, "El usuario ya existe");
 		}
 		
